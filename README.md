@@ -1,5 +1,6 @@
 ## JANJI
-Saya Firda Ridzki Utami dengan Nim 2401626 mengerjakan tugas praktikum dalam mata kuliah Desain Pemograman Berorientasi Objek (DPBO) untuk keberkahannya maka saya tidak melakukan kecurang seperti yang telah dispesifikasikan
+Saya Firda Ridzki Utami dengan Nim 2401626 mengerjakan TP10 dalam Praktikum mata kuliah Desain Pemograman Berorientasi Objek (DPBO)
+untuk keberkahannya maka saya tidak melakukan kecurang seperti yang telah dispesifikasikan
 
 ## Desain Program
 <img width="1057" height="522" alt="Desain" src="https://github.com/user-attachments/assets/a4f27155-2aa3-40d6-ade3-51c4b5a01168" />
