@@ -6,7 +6,8 @@ untuk keberkahannya maka saya tidak melakukan kecurang seperti yang telah dispes
 <img width="1057" height="522" alt="Desain" src="https://github.com/user-attachments/assets/a4f27155-2aa3-40d6-ade3-51c4b5a01168" />
 
 ## Alur Program
-skskskskksksks
+kode ini menggunakan MVVM dengan strukur utama 
+Model yang me
 
 ## Dokumentasi
 ## Create, Update, Delete Barang
