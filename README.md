@@ -6,11 +6,15 @@ untuk keberkahannya maka saya tidak melakukan kecurang seperti yang telah dispes
 <img width="1057" height="522" alt="Desain" src="https://github.com/user-attachments/assets/a4f27155-2aa3-40d6-ade3-51c4b5a01168" />
 
 ## Alur Program
+
+
 Aplikasi ini merupakan web peminjaman barang elektronik yang dirancang untuk mengelola data barang, pelanggan, pegawai, dan stok secara terstruktur. Melalui sistem ini, pengguna dapat melakukan proses pendataan barang elektronik, meminjamkan barang, mengatur stok, serta mencatat data pegawai dan pelanggan secara efisien. Agar pengelolaan data lebih rapi dan terorganisir, aplikasi menggunakan arsitektur MVVM (Model–View–ViewModel), sehingga pemisahan antara logika bisnis, tampilan, dan alur data menjadi lebih jelas.
 
 Program ini memanfaatkan empat tabel utama di dalam database—Barang, Pegawai, Pelanggan, dan Stok yang saling berelasi dan mendukung proses peminjaman barang elektronik. Dengan arsitektur MVVM dan penggunaan data binding, alur data menjadi lebih bersih dan mudah dipelihara.
 
 **a. Model**
+
+
 Model berada di folder /models/ dan terdiri dari empat file utama:
 **Barang.php
 Pelanggan.php
@@ -21,6 +25,8 @@ Setiap model berfungsi untuk, Mendefinisikan struktur data (atribut yang sesuai 
 
 
 **b. View**
+
+
 View berada di folder /view/ dan berisi file-file tampilan seperti:
 **barang_list.php
 barang_form.php
@@ -37,6 +43,9 @@ Fungsi View, Menampilkan data ke pengguna dalam bentuk HTML, Menyediakan form in
 
 
 **c. ViewModel**
+
+
+
 ViewModel berada di folder /viewmodels/ dan terdiri dari:
 **BarangViewModel.php
 PegawaiViewModel.php
@@ -45,6 +54,9 @@ StokViewModel.php**
 Peran ViewModel, Menjadi **jembatan** antara View dan Model, Menerima request dari user (melalui parameter GET/POST), Memanggil fungsi Model (misalnya tambahBarang, getAllBarang, updateBarang), Memvalidasi input jika diperlukan, Mengolah hasil query sebelum dikirim ke View, Mengirim data ke View dalam bentuk variabel untuk di-bind. ViewModel adalah pusat pengendali alur data dalam aplikasi.
 
 **d. Data Binding**
+
+
+
 Data binding dalam program ini terjadi ketika ViewModel mengirim data ke View, lalu View menampilkan data tersebut menggunakan variabel yang sudah disiapkan.
 **barang_list.php**
 Data array $barangList dari ViewModel akan ditampilkan sebagai tabel HTML.
@@ -57,11 +69,19 @@ Hasil query database yang dikirim oleh ViewModel ditampilkan baris per baris pad
 
 
 **e. Index se­bagai Router**
+
+
 File **index.php** berperan sebagai router utama aplikasi.
 Router menentukan:
 ViewModel mana yang harus dijalankan
+
+
 View mana yang harus ditampilkan
+
+
 Aksi apa yang sedang dilakukan user (add, edit, delete, list)
+
+
 Entitas apa yang sedang dibuka (barang, pegawai, dll.)
 
 
