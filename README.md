@@ -6,8 +6,31 @@ untuk keberkahannya maka saya tidak melakukan kecurang seperti yang telah dispes
 <img width="1057" height="522" alt="Desain" src="https://github.com/user-attachments/assets/a4f27155-2aa3-40d6-ade3-51c4b5a01168" />
 
 ## Alur Program
-kode ini menggunakan MVVM dengan strukur utama 
-Model yang me
+Program ini dibangun menggunakan arsitektur MVVM (Model–View–ViewModel) untuk memisahkan logika bisnis, tampilan, dan pengendalian alur data. Tema aplikasi ini adalah peminjaman barang elektronik yang menggunakan empat tabel utama—Barang, Pegawai, Pelanggan, dan Stok—yang saling berelasi di dalam database. 
+a. Model
+Terdiri dari empat file:
+Barang.php
+Pelanggan.php
+Pegawai.php
+Stok.php
+yang berfungsi menangani struktur data dan query database (CRUD).
+b. View
+Berisi file tampilan seperti:
+barang_list.php
+barang_form.php
+pelanggan_list.php, dll.
+View hanya menampilkan data tanpa logika bisnis.
+c. ViewModel
+Terdiri dari 4 file:
+BarangViewModel.php
+PegawaiViewModel.php
+ViewModel menjadi jembatan antara View dan Model: menerima request, memproses, memanggil Model, dan mengirim data kembali ke View.
+
+
+d. Data binding terjadi saat ViewModel mengirim data ke View, lalu View menampilkannya. Di barang_list.php, data array dari ViewModel di-bind ke tabel HTML. Di barang_form.php, jika sedang edit, ViewModel mengirim data barang view mengisikan value ke input form. Di list pegawai/pelanggan, data dari database ditampilkan langsung melalui variabel yang diberikan ViewModel.
+
+
+
 
 ## Dokumentasi
 ## Create, Update, Delete Barang
